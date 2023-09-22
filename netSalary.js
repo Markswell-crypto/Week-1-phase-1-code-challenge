@@ -3,7 +3,7 @@
 
 function calculateNetSalary() {
   // Takes input values from user
-  let basicSalary = parseFloat(document.getElementById("basic-salary").value);
+  let basicSalary = parseFloat(document.getElementById("salary").value);
   let benefits = parseFloat(document.getElementById("benefits").value);
   //Computes the payee 
   let payee = Math.floor((basicSalary + benefits) * 0.25);
@@ -16,8 +16,8 @@ function calculateNetSalary() {
   //Computes net salary
   let netSalary = grossSalary - payee - NHIFDeductions - NSSFDeductions;
   //Output net salary
-  let resultElement = document.getElementById("result");
-  resultElement.innerHTML = `
+  let calculatedElement = document.getElementById("result");
+  calculatedElement.innerHTML = `
     <p>Your P.A.Y.E is ${payee}</p>
     <p>Your gross salary is ${grossSalary}</p>
     <p>Your NHIF Deduction is ${NHIFDeductions}</p>
@@ -25,6 +25,6 @@ function calculateNetSalary() {
     <p>Your net salary is: Ksh. ${netSalary}</p>
     `;
 }
-// This is an event listener to the compute button
-let calculateButton = document.getElementById("calculate-button");
-calculateButton.addEventListener("click", calculateNetSalary);
+// This is an event listener that outputs the results when clicked
+let computeButton = document.getElementById("button");
+computeButton.addEventListener("click", calculateNetSalary);
