@@ -1,25 +1,21 @@
 // GRADING SYSTEM
 //The function uses the if-else statement to choose the student's grade based on the input marks.
 // The grade is displayed in the #grade paragraph element using the textContent property.
-function gradingSystem() {
-      // Takes input values from user
-    const marks = parseInt(document.getElementById("marks").value);
-    let grade;
+let marks;
+function gradingSystem(marks) {
+// Takes input values from user
 // If else statement
     if (marks >= 80 && marks <= 100) {
-      grade = "A";
+      console.log("A");
     } else if (marks >= 60 && marks < 80) {
-      grade = "B";
+      console.log("B");
     } else if (marks >= 50 && marks < 60) {
-      grade = "C";
+      console.log("C");
     } else if (marks >= 40 && marks < 50) {
-      grade = "D";
+      console.log("D");
     } else if (marks >=0 && marks < 40) {
-      grade = "E";
+      console.log("E");
+    } else {
+      console.log("Invalid Grade")
     }
-      else {
-      grade = "Invalid Grade"
-    }
-
-    document.getElementById("grade").textContent = `Grade: ${grade}`;
   }
