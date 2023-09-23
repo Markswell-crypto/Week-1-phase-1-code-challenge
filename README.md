@@ -13,7 +13,7 @@ Write a function that prompts the user to input student marks. The input should 
 The function uses the if-else statement to choose the student's grade based on the input marks.
 The grade is displayed in the #grade paragraph element using the textContent property.
 
-*function gradingSystem()
+  *function gradingSystem()
 
 Takes input values from user and checks through the various If else statement to see if a condition is met. If at least one condition is met, the grade is displayed as output.
 
@@ -32,8 +32,9 @@ Takes the speed the user inputs in km/hr.
 
 The speed is passed as an integer value and given a variable called speed
 
-*let speed;
-*function speedCalculator() 
+  *let speed;
+  
+  *function speedCalculator() 
 
 
 The First if statememtchecks if the speed is less than 70 and then displays the results if condition is met.
@@ -41,6 +42,7 @@ The First if statememtchecks if the speed is less than 70 and then displays the 
     *if (speed < 70) {
     *console.log('Ok');
     *} 
+
 1 point is recieved for every 5 km/h over the speed limit set as 70 km/h. If the points exceed 12 your License is suspended
 
 ### Challenge 3: Net Salary Calculator (Toy Problem)
@@ -56,10 +58,10 @@ NB: Use KRA, NHIF, and NSSF values provided in the link below.
 #### Solution
 This function 
 
-*function calculateNetSalary()
+  *function calculateNetSalary()
 
 Computes  the net salary by accepting the basic salary and benefits;
 Then Computes the payee, NHIF deductions, NSSF deductions and the gross salary
  The net salary is achieved by 
  
-*let netSalary = grossSalary - payee - NHIFDeductions - NSSFDeductions;
+        let netSalary = grossSalary - payee - NHIFDeductions - NSSFDeductions;
