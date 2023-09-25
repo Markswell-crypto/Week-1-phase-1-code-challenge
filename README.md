@@ -60,11 +60,11 @@ This function
 
         function calculateNetSalary()
 
-Computes  the net salary by accepting the basic salary and benefits;
-Then Computes the payee, NHIF deductions, NSSF deductions and the gross salary
+Computes  the net salary by accepting the basic salary and benefits and adds them as the Total income or gross pay.
+Then calculates the payee, NHIF deductions, NSSF deductions, house levy and tax on relief.
  The net salary is achieved by 
  
-        let netSalary = grossSalary - payee - NHIFDeductions - NSSFDeductions;
+        let netSalary = grossSalary - payee - NHIFDeductions - NSSFDeductions - tax on relief - house levy;
 
 ## License
 MIT License

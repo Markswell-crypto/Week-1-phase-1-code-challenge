@@ -14,9 +14,9 @@
     else {
      let ticketPoints = Math.floor((speed - 70) / 5);
       if (ticketPoints > 12) {
-     console.log('Your License Has Been suspended');
+     return ('Your License Has Been suspended');
       } else {
-     console.log(`TicketPoints: ${ticketPoints}`);
+     return (`TicketPoints: ${ticketPoints}`);
       }
     }
   }
